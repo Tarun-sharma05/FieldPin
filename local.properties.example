@@ -1,0 +1,5 @@
+# Copy this file to local.properties and fill in your own values.
+# local.properties is git-ignored and must never be committed.
+
+# Map style URL (keyless SDK). Replace with your own style or tile source.
+MAP_STYLE_URL=https://example.invalid/style.json
