@@ -17,6 +17,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.tarun.fieldpin.domain.repository.AuthRepository
 import com.tarun.fieldpin.ui.login.LoginRoute
+import com.tarun.fieldpin.ui.map.MapRoute
 import com.tarun.fieldpin.ui.sites.SitesRoute
 import kotlinx.coroutines.launch
 import org.koin.compose.koinInject
@@ -86,15 +87,7 @@ fun AppNavigation(
         }
 
         composable(Screen.Map.route) {
-            Box(
-                modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = "Map Screen Placeholder (S5)",
-                    style = MaterialTheme.typography.headlineSmall
-                )
-            }
+            MapRoute()
         }
 
         composable(Screen.NewSite.route) {
