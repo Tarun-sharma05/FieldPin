@@ -36,4 +36,13 @@ interface SiteDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertSite(site: SiteEntity)
 
+    @Query("SELECT * FROM site WHERE syncState != 'SYNCED'")
+    suspend fun getSitesNeedingSync(): List<SiteEntity>
+
+    @Query("UPDATE site SET syncState = :state WHERE id = :id")
+    suspend fun setSyncState(id: String, state: String)
+
+    @Query("UPDATE site SET syncState = :state, syncError = :reason WHERE id = :id")
+    suspend fun setSyncFailure(id: String, state: String, reason: String)
+
 }

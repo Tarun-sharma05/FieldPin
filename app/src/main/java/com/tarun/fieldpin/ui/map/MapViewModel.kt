@@ -48,6 +48,7 @@ class MapViewModel(
                 distanceToPolygonMeters(userLocation, selectedSite.boundary)
             } else null,
             isUserInsideSelectedSite = inside,
+            checkInAccuracyM = fix?.accuracyM?.toDouble(),
             isLoading = false
         )
     }.stateIn(

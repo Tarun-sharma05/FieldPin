@@ -18,6 +18,7 @@ import androidx.navigation.compose.rememberNavController
 import com.tarun.fieldpin.domain.repository.AuthRepository
 import com.tarun.fieldpin.ui.login.LoginRoute
 import com.tarun.fieldpin.ui.map.MapRoute
+import com.tarun.fieldpin.ui.inspection.InspectionRoute
 import com.tarun.fieldpin.ui.newsite.NewSiteRoute
 import com.tarun.fieldpin.ui.sites.SitesRoute
 import kotlinx.coroutines.launch
@@ -88,7 +89,9 @@ fun AppNavigation(
         }
 
         composable(Screen.Map.route) {
-            MapRoute()
+            MapRoute(onStartInspection = { siteId ->
+                navController.navigate(Screen.Inspection.createRoute(siteId))
+            })
         }
 
         composable(Screen.NewSite.route) {
@@ -100,15 +103,12 @@ fun AppNavigation(
 
         composable(Screen.Inspection.route) { backStackEntry ->
             val siteId = backStackEntry.arguments?.getString("siteId") ?: ""
-            Box(
-                modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = "Inspection Screen Placeholder for Site: $siteId",
-                    style = MaterialTheme.typography.headlineSmall
-                )
-            }
+            InspectionRoute(
+                siteId = siteId,
+                onBack = { navController.popBackStack() },
+                onOpenMap = { navController.navigate(Screen.Map.route) },
+                onSubmitted = { navController.popBackStack() }
+            )
         }
     }
 }

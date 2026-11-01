@@ -18,5 +18,6 @@ data class SiteEntity(
     val createdAt: Long,
     val updatedAt: Long,
     val serverVersion: Long,
-    val syncState: String
+    val syncState: String,
+    val syncError: String? = null
 )

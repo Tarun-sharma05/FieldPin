@@ -41,6 +41,8 @@ fun SiteWithPendingCount.toDomain(): Site {
     )
 }
 
+fun SiteEntity.toDomain(): Site = SiteWithPendingCount(this, 0).toDomain()
+
 fun Site.toEntity(): SiteEntity {
     return SiteEntity(
         id = id,
@@ -54,7 +56,8 @@ fun Site.toEntity(): SiteEntity {
         createdAt = createdAt,
         updatedAt = updatedAt,
         serverVersion = serverVersion,
-        syncState = syncState.name
+        syncState = syncState.name,
+        syncError = null
     )
 }
 

@@ -51,6 +51,7 @@ import com.tarun.fieldpin.BuildConfig
 import com.tarun.fieldpin.domain.model.LatLng
 import com.tarun.fieldpin.domain.model.LocationState
 import com.tarun.fieldpin.domain.model.Site
+import com.tarun.fieldpin.domain.usecase.MAX_CHECK_IN_ACCURACY_M
 import org.koin.androidx.compose.koinViewModel
 import org.maplibre.android.MapLibre
 import org.maplibre.android.WellKnownTileServer
@@ -84,11 +85,12 @@ private const val USER_LOCATION_LAYER_ID = "fieldpin-user-location"
 private const val OFFLINE_FALLBACK_STYLE = """{"version":8,"sources":{},"layers":[{"id":"background","type":"background","paint":{"background-color":"#F2F4F7"}}]}"""
 
 @Composable
-fun MapRoute(viewModel: MapViewModel = koinViewModel()) {
+fun MapRoute(onStartInspection: (String) -> Unit, viewModel: MapViewModel = koinViewModel()) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     MapScreen(
         state = state,
         onSiteTap = viewModel::onSiteTap,
+        onStartInspection = onStartInspection,
         onLocationTrackingChanged = viewModel::setLocationTrackingEnabled
     )
 }
@@ -98,6 +100,7 @@ fun MapRoute(viewModel: MapViewModel = koinViewModel()) {
 private fun MapScreen(
     state: MapUiState,
     onSiteTap: (String) -> Unit,
+    onStartInspection: (String) -> Unit,
     onLocationTrackingChanged: (Boolean) -> Unit
 ) {
     val context = LocalContext.current
@@ -189,16 +192,18 @@ private fun MapScreen(
                         Text(site.name, style = MaterialTheme.typography.titleLarge)
                         Text("${site.areaSqm.toInt()} m²", style = MaterialTheme.typography.bodyLarge)
                         when (state.locationState) {
-                            is LocationState.Fix -> if (state.isUserInsideSelectedSite == true) {
-                                Text("You are inside")
-                            } else {
-                                Text("${state.distanceToSelectedSiteM?.toInt() ?: 0} m to the site boundary")
+                            is LocationState.Fix -> {
+                                if (state.isUserInsideSelectedSite == true) Text("You are inside")
+                                else Text("${state.distanceToSelectedSiteM?.toInt() ?: 0} m to the site boundary")
+                                if (state.checkInAccuracyM?.let { it > MAX_CHECK_IN_ACCURACY_M } == true) {
+                                    Text("GPS accuracy is too low for check-in. Wait for a fix of ${MAX_CHECK_IN_ACCURACY_M.toInt()} m or better.")
+                                }
                             }
                             LocationState.NoPermission -> Text("Allow location access to see your distance and check in.")
                             LocationState.GpsOff -> Text("GPS is off. Turn it on to see your distance.")
                             LocationState.Unavailable -> Text("Location is unavailable. Check GPS and try again.")
                         }
-                        Button(onClick = {}, enabled = state.canCheckIn) {
+                        Button(onClick = { onStartInspection(site.id) }, enabled = state.canCheckIn) {
                             Text("Check in")
                         }
                     }

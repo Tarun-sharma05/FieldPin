@@ -24,6 +24,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -58,6 +59,7 @@ fun SitesRoute(
         onNewSiteClick = onNewSiteClick,
         onMapTabClick = onMapTabClick,
         onLogoutClick = onLogoutClick,
+        onSyncNow = viewModel::syncNow,
         modifier = modifier
     )
 }
@@ -72,6 +74,7 @@ fun SitesScreen(
     onNewSiteClick: () -> Unit,
     onMapTabClick: () -> Unit,
     onLogoutClick: () -> Unit,
+    onSyncNow: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -80,6 +83,9 @@ fun SitesScreen(
             TopAppBar(
                 title = { Text("FieldPin Sites") },
                 actions = {
+                    TextButton(onClick = onSyncNow, enabled = !uiState.isSyncing) {
+                        Text(if (uiState.isSyncing) "Syncing…" else "Sync now")
+                    }
                     IconButton(onClick = onLogoutClick) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ExitToApp,
@@ -134,6 +140,10 @@ fun SitesScreen(
                 selectedStatus = uiState.selectedStatus,
                 onStatusSelected = onStatusSelected
             )
+
+            uiState.syncMessage?.let {
+                Text(it, modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp))
+            }
 
             Box(
                 modifier = Modifier

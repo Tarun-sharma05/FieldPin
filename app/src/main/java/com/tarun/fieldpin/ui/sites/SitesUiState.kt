@@ -7,5 +7,7 @@ data class SitesUiState(
     val query: String = "",
     val selectedStatus: SiteStatus? = null,
     val sites: List<Site> = emptyList(),
-    val isLoading: Boolean = true
+    val isLoading: Boolean = true,
+    val isSyncing: Boolean = false,
+    val syncMessage: String? = null
 )
