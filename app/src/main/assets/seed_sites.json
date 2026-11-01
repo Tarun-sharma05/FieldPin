@@ -1,0 +1,738 @@
+[
+  {
+    "id": "seed-01-jaipur-fountain-rd",
+    "name": "Fountain RD",
+    "category": "Lake",
+    "status": "CLOSED",
+    "boundary": [
+      {
+        "latitude": 26.906422,
+        "longitude": 75.736881
+      },
+      {
+        "latitude": 26.906019,
+        "longitude": 75.736892
+      },
+      {
+        "latitude": 26.906022,
+        "longitude": 75.737322
+      },
+      {
+        "latitude": 26.906442,
+        "longitude": 75.737296
+      }
+    ]
+  },
+  {
+    "id": "seed-02-jaipur-tal-katora-lake-jaipur",
+    "name": "Tal Katora lake, Jaipur",
+    "category": "Lake",
+    "status": "CLOSED",
+    "boundary": [
+      {
+        "latitude": 26.934183,
+        "longitude": 75.824097
+      },
+      {
+        "latitude": 26.932054,
+        "longitude": 75.823537
+      },
+      {
+        "latitude": 26.931562,
+        "longitude": 75.825889
+      },
+      {
+        "latitude": 26.933691,
+        "longitude": 75.826449
+      },
+      {
+        "latitude": 26.933928,
+        "longitude": 75.825317
+      },
+      {
+        "latitude": 26.933943,
+        "longitude": 75.825245
+      }
+    ]
+  },
+  {
+    "id": "seed-03-jaipur-kardhani-d-block-park",
+    "name": "Kardhani D-Block Park",
+    "category": "Park",
+    "status": "NEEDS_REPAIR",
+    "boundary": [
+      {
+        "latitude": 26.956778,
+        "longitude": 75.711414
+      },
+      {
+        "latitude": 26.956308,
+        "longitude": 75.711294
+      },
+      {
+        "latitude": 26.956121,
+        "longitude": 75.712066
+      },
+      {
+        "latitude": 26.956583,
+        "longitude": 75.712221
+      }
+    ]
+  },
+  {
+    "id": "seed-04-jaipur-playzone-playground",
+    "name": "PlayZone Playground",
+    "category": "Park",
+    "status": "CLOSED",
+    "boundary": [
+      {
+        "latitude": 26.836541,
+        "longitude": 75.73087
+      },
+      {
+        "latitude": 26.835871,
+        "longitude": 75.730624
+      },
+      {
+        "latitude": 26.83572,
+        "longitude": 75.731012
+      },
+      {
+        "latitude": 26.836438,
+        "longitude": 75.731283
+      }
+    ]
+  },
+  {
+    "id": "seed-05-jaipur-mahatama-gandi-nagar-park",
+    "name": "Mahatama Gandi Nagar Park",
+    "category": "Park",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.896176,
+        "longitude": 75.745422
+      },
+      {
+        "latitude": 26.89567,
+        "longitude": 75.745716
+      },
+      {
+        "latitude": 26.895793,
+        "longitude": 75.746096
+      },
+      {
+        "latitude": 26.895605,
+        "longitude": 75.746211
+      },
+      {
+        "latitude": 26.895864,
+        "longitude": 75.746824
+      },
+      {
+        "latitude": 26.896369,
+        "longitude": 75.746465
+      },
+      {
+        "latitude": 26.896543,
+        "longitude": 75.746845
+      },
+      {
+        "latitude": 26.896811,
+        "longitude": 75.746662
+      }
+    ]
+  },
+  {
+    "id": "seed-06-jaipur-agarsen-park",
+    "name": "Agarsen park",
+    "category": "Park",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.966447,
+        "longitude": 75.784492
+      },
+      {
+        "latitude": 26.965955,
+        "longitude": 75.784213
+      },
+      {
+        "latitude": 26.966079,
+        "longitude": 75.783897
+      },
+      {
+        "latitude": 26.96573,
+        "longitude": 75.783731
+      },
+      {
+        "latitude": 26.965247,
+        "longitude": 75.783613
+      },
+      {
+        "latitude": 26.964504,
+        "longitude": 75.783362
+      },
+      {
+        "latitude": 26.96416,
+        "longitude": 75.784154
+      },
+      {
+        "latitude": 26.966084,
+        "longitude": 75.785238
+      }
+    ]
+  },
+  {
+    "id": "seed-07-jaipur-ep-park",
+    "name": "Ep Park",
+    "category": "Park",
+    "status": "CLOSED",
+    "boundary": [
+      {
+        "latitude": 26.837615,
+        "longitude": 75.798246
+      },
+      {
+        "latitude": 26.836752,
+        "longitude": 75.79795
+      },
+      {
+        "latitude": 26.836648,
+        "longitude": 75.798406
+      },
+      {
+        "latitude": 26.837519,
+        "longitude": 75.798666
+      }
+    ]
+  },
+  {
+    "id": "seed-08-jaipur-central-park",
+    "name": "Central Park",
+    "category": "Park",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.904786,
+        "longitude": 75.806737
+      },
+      {
+        "latitude": 26.903992,
+        "longitude": 75.807861
+      },
+      {
+        "latitude": 26.903389,
+        "longitude": 75.809843
+      },
+      {
+        "latitude": 26.903775,
+        "longitude": 75.810097
+      },
+      {
+        "latitude": 26.903414,
+        "longitude": 75.811159
+      },
+      {
+        "latitude": 26.902921,
+        "longitude": 75.810935
+      },
+      {
+        "latitude": 26.902007,
+        "longitude": 75.813526
+      },
+      {
+        "latitude": 26.903841,
+        "longitude": 75.813913
+      },
+      {
+        "latitude": 26.906409,
+        "longitude": 75.807581
+      }
+    ]
+  },
+  {
+    "id": "seed-09-jaipur-dil-aram-bagh",
+    "name": "Dil-Aram Bagh",
+    "category": "Park",
+    "status": "NEEDS_REPAIR",
+    "boundary": [
+      {
+        "latitude": 26.986744,
+        "longitude": 75.853104
+      },
+      {
+        "latitude": 26.986386,
+        "longitude": 75.853818
+      },
+      {
+        "latitude": 26.987072,
+        "longitude": 75.85426
+      },
+      {
+        "latitude": 26.987129,
+        "longitude": 75.854169
+      },
+      {
+        "latitude": 26.987337,
+        "longitude": 75.854274
+      },
+      {
+        "latitude": 26.987495,
+        "longitude": 75.854311
+      },
+      {
+        "latitude": 26.987524,
+        "longitude": 75.854255
+      },
+      {
+        "latitude": 26.987452,
+        "longitude": 75.854215
+      },
+      {
+        "latitude": 26.987535,
+        "longitude": 75.85404
+      },
+      {
+        "latitude": 26.987603,
+        "longitude": 75.85408
+      },
+      {
+        "latitude": 26.987629,
+        "longitude": 75.854032
+      },
+      {
+        "latitude": 26.987543,
+        "longitude": 75.853839
+      }
+    ]
+  },
+  {
+    "id": "seed-10-jaipur-sisodia-rani-garden",
+    "name": "Sisodia Rani Garden",
+    "category": "Park",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.899508,
+        "longitude": 75.858894
+      },
+      {
+        "latitude": 26.899175,
+        "longitude": 75.85882
+      },
+      {
+        "latitude": 26.8992,
+        "longitude": 75.858677
+      },
+      {
+        "latitude": 26.899088,
+        "longitude": 75.858652
+      },
+      {
+        "latitude": 26.899004,
+        "longitude": 75.859122
+      },
+      {
+        "latitude": 26.898856,
+        "longitude": 75.85909
+      },
+      {
+        "latitude": 26.898704,
+        "longitude": 75.859949
+      },
+      {
+        "latitude": 26.899522,
+        "longitude": 75.860131
+      },
+      {
+        "latitude": 26.899711,
+        "longitude": 75.859067
+      },
+      {
+        "latitude": 26.899626,
+        "longitude": 75.859049
+      },
+      {
+        "latitude": 26.899668,
+        "longitude": 75.858802
+      },
+      {
+        "latitude": 26.899532,
+        "longitude": 75.858756
+      }
+    ]
+  },
+  {
+    "id": "seed-11-jaipur-lotus-villa-main-park",
+    "name": "Lotus Villa Main Park",
+    "category": "Park",
+    "status": "NEEDS_REPAIR",
+    "boundary": [
+      {
+        "latitude": 26.804627,
+        "longitude": 75.869006
+      },
+      {
+        "latitude": 26.804119,
+        "longitude": 75.8691
+      },
+      {
+        "latitude": 26.804169,
+        "longitude": 75.87044
+      },
+      {
+        "latitude": 26.80454,
+        "longitude": 75.870498
+      }
+    ]
+  },
+  {
+    "id": "seed-12-jaipur-solar-site-osm-1462041702",
+    "name": "Solar Site (OSM 1462041702)",
+    "category": "Solar Site",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.973669,
+        "longitude": 75.778563
+      },
+      {
+        "latitude": 26.973079,
+        "longitude": 75.778627
+      },
+      {
+        "latitude": 26.97311,
+        "longitude": 75.778783
+      },
+      {
+        "latitude": 26.973409,
+        "longitude": 75.778762
+      },
+      {
+        "latitude": 26.973433,
+        "longitude": 75.778928
+      },
+      {
+        "latitude": 26.973701,
+        "longitude": 75.77889
+      }
+    ]
+  },
+  {
+    "id": "seed-13-jaipur-solar-site-osm-1462041732",
+    "name": "Solar Site (OSM 1462041732)",
+    "category": "Solar Site",
+    "status": "CLOSED",
+    "boundary": [
+      {
+        "latitude": 26.990351,
+        "longitude": 75.781106
+      },
+      {
+        "latitude": 26.990002,
+        "longitude": 75.780972
+      },
+      {
+        "latitude": 26.990055,
+        "longitude": 75.780698
+      },
+      {
+        "latitude": 26.989519,
+        "longitude": 75.780548
+      },
+      {
+        "latitude": 26.989443,
+        "longitude": 75.78094
+      },
+      {
+        "latitude": 26.98972,
+        "longitude": 75.781036
+      },
+      {
+        "latitude": 26.989644,
+        "longitude": 75.781717
+      },
+      {
+        "latitude": 26.989777,
+        "longitude": 75.781739
+      },
+      {
+        "latitude": 26.989796,
+        "longitude": 75.781851
+      },
+      {
+        "latitude": 26.989906,
+        "longitude": 75.78191
+      },
+      {
+        "latitude": 26.989954,
+        "longitude": 75.781857
+      },
+      {
+        "latitude": 26.990126,
+        "longitude": 75.781894
+      }
+    ]
+  },
+  {
+    "id": "seed-14-jaipur-solar-site-osm-1462041724",
+    "name": "Solar Site (OSM 1462041724)",
+    "category": "Solar Site",
+    "status": "NEEDS_REPAIR",
+    "boundary": [
+      {
+        "latitude": 26.995303,
+        "longitude": 75.791513
+      },
+      {
+        "latitude": 26.994981,
+        "longitude": 75.790949
+      },
+      {
+        "latitude": 26.994696,
+        "longitude": 75.791183
+      },
+      {
+        "latitude": 26.995021,
+        "longitude": 75.791722
+      }
+    ]
+  },
+  {
+    "id": "seed-15-jaipur-solar-site-osm-1462041683",
+    "name": "Solar Site (OSM 1462041683)",
+    "category": "Solar Site",
+    "status": "NEEDS_REPAIR",
+    "boundary": [
+      {
+        "latitude": 26.835709,
+        "longitude": 75.830233
+      },
+      {
+        "latitude": 26.835212,
+        "longitude": 75.830249
+      },
+      {
+        "latitude": 26.835228,
+        "longitude": 75.830574
+      },
+      {
+        "latitude": 26.835722,
+        "longitude": 75.830548
+      }
+    ]
+  },
+  {
+    "id": "seed-16-jaipur-military-polo-ground",
+    "name": "Military Polo Ground",
+    "category": "Sports Ground",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.914226,
+        "longitude": 75.763468
+      },
+      {
+        "latitude": 26.911395,
+        "longitude": 75.762873
+      },
+      {
+        "latitude": 26.908003,
+        "longitude": 75.762882
+      },
+      {
+        "latitude": 26.907816,
+        "longitude": 75.764133
+      },
+      {
+        "latitude": 26.907969,
+        "longitude": 75.764906
+      },
+      {
+        "latitude": 26.910877,
+        "longitude": 75.765142
+      },
+      {
+        "latitude": 26.913919,
+        "longitude": 75.765592
+      }
+    ]
+  },
+  {
+    "id": "seed-17-jaipur-sanganer-stadium",
+    "name": "Sanganer Stadium",
+    "category": "Sports Ground",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.820303,
+        "longitude": 75.783085
+      },
+      {
+        "latitude": 26.819005,
+        "longitude": 75.783011
+      },
+      {
+        "latitude": 26.818946,
+        "longitude": 75.783066
+      },
+      {
+        "latitude": 26.81889,
+        "longitude": 75.783706
+      },
+      {
+        "latitude": 26.819764,
+        "longitude": 75.783796
+      },
+      {
+        "latitude": 26.820359,
+        "longitude": 75.783865
+      }
+    ]
+  },
+  {
+    "id": "seed-18-jaipur-water-tank-osm-754591089",
+    "name": "Water Tank (OSM 754591089)",
+    "category": "Water Tank",
+    "status": "NEEDS_REPAIR",
+    "boundary": [
+      {
+        "latitude": 26.946571,
+        "longitude": 75.734835
+      },
+      {
+        "latitude": 26.946581,
+        "longitude": 75.734908
+      },
+      {
+        "latitude": 26.9466,
+        "longitude": 75.734938
+      },
+      {
+        "latitude": 26.94666,
+        "longitude": 75.734971
+      },
+      {
+        "latitude": 26.946729,
+        "longitude": 75.734955
+      },
+      {
+        "latitude": 26.946773,
+        "longitude": 75.734894
+      },
+      {
+        "latitude": 26.946773,
+        "longitude": 75.734815
+      },
+      {
+        "latitude": 26.946755,
+        "longitude": 75.73478
+      },
+      {
+        "latitude": 26.946696,
+        "longitude": 75.734741
+      },
+      {
+        "latitude": 26.946663,
+        "longitude": 75.734739
+      },
+      {
+        "latitude": 26.946603,
+        "longitude": 75.734769
+      }
+    ]
+  },
+  {
+    "id": "seed-19-jaipur-water-tank-osm-476478271",
+    "name": "Water Tank (OSM 476478271)",
+    "category": "Water Tank",
+    "status": "ACTIVE",
+    "boundary": [
+      {
+        "latitude": 26.860484,
+        "longitude": 75.758423
+      },
+      {
+        "latitude": 26.860479,
+        "longitude": 75.758505
+      },
+      {
+        "latitude": 26.860527,
+        "longitude": 75.758568
+      },
+      {
+        "latitude": 26.8606,
+        "longitude": 75.758573
+      },
+      {
+        "latitude": 26.860656,
+        "longitude": 75.758519
+      },
+      {
+        "latitude": 26.860661,
+        "longitude": 75.758437
+      },
+      {
+        "latitude": 26.860613,
+        "longitude": 75.758375
+      },
+      {
+        "latitude": 26.86054,
+        "longitude": 75.758369
+      }
+    ]
+  },
+  {
+    "id": "seed-20-jaipur-water-tank-osm-863276774",
+    "name": "Water Tank (OSM 863276774)",
+    "category": "Water Tank",
+    "status": "NEEDS_REPAIR",
+    "boundary": [
+      {
+        "latitude": 26.938035,
+        "longitude": 75.789576
+      },
+      {
+        "latitude": 26.938082,
+        "longitude": 75.789635
+      },
+      {
+        "latitude": 26.938116,
+        "longitude": 75.789648
+      },
+      {
+        "latitude": 26.938183,
+        "longitude": 75.789636
+      },
+      {
+        "latitude": 26.938229,
+        "longitude": 75.789582
+      },
+      {
+        "latitude": 26.938237,
+        "longitude": 75.789509
+      },
+      {
+        "latitude": 26.938225,
+        "longitude": 75.789474
+      },
+      {
+        "latitude": 26.938177,
+        "longitude": 75.789424
+      },
+      {
+        "latitude": 26.938143,
+        "longitude": 75.789414
+      },
+      {
+        "latitude": 26.938074,
+        "longitude": 75.789434
+      },
+      {
+        "latitude": 26.938032,
+        "longitude": 75.789497
+      }
+    ]
+  }
+]
