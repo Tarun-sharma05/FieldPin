@@ -1,6 +1,7 @@
 package com.tarun.fieldpin
 
 import android.app.Application
+import com.tarun.fieldpin.di.authModule
 import com.tarun.fieldpin.di.dataModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -12,7 +13,7 @@ class FieldPinApp : Application() {
         startKoin {
             androidLogger()
             androidContext(this@FieldPinApp)
-            modules(dataModule)
+            modules(dataModule, authModule)
         }
     }
 }
