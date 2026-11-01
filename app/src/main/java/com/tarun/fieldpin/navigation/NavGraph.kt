@@ -18,6 +18,7 @@ import androidx.navigation.compose.rememberNavController
 import com.tarun.fieldpin.domain.repository.AuthRepository
 import com.tarun.fieldpin.ui.login.LoginRoute
 import com.tarun.fieldpin.ui.map.MapRoute
+import com.tarun.fieldpin.ui.newsite.NewSiteRoute
 import com.tarun.fieldpin.ui.sites.SitesRoute
 import kotlinx.coroutines.launch
 import org.koin.compose.koinInject
@@ -91,15 +92,10 @@ fun AppNavigation(
         }
 
         composable(Screen.NewSite.route) {
-            Box(
-                modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = "New Site Screen Placeholder (S6)",
-                    style = MaterialTheme.typography.headlineSmall
-                )
-            }
+            NewSiteRoute(
+                onBack = { navController.popBackStack() },
+                onSiteSaved = { navController.popBackStack() }
+            )
         }
 
         composable(Screen.Inspection.route) { backStackEntry ->
